@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: rgba(180, 211, 181, 0.497);
+    position: fixed;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 11vh;
+}
+.schema img{
+    height: 55px;
+    width: 60px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aqu;
+    gap: 1.5vw;
+    margin-left: 4vw;
+}
+.logo h1{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgba(29, 62, 31, 0.794);
+}
+.collapse{
+    background-color: yello;
+    max-width: 55vw;
+    justify-content: space-evenly;
+}
+.navbar-nav{
+    gap: 2vw;
+}
+
+section img{
+    height: 70vh;
+    width: 50vw;
+    object-fit: cover;
+}
+
+#Accueil{
+    padding-top: 11vh;
+    height: 189vh;
+    background-color: rgba(255, 255, 0, 0.542);
+}
+
+#Station{
+    padding-top: 11vh;
+    height: 189vh;
+    background-color: rgba(4, 255, 0, 0.45);
+}
+
+#Pieces{
+    padding-top: 11vh;
+    height: 189vh;
+    background-color: rgba(0, 234, 255, 0.566);
+}
+#Repas{
+    padding-top: 11vh;
+    height: 189vh;
+    background-color: rgba(0, 68, 255, 0.566);
+}
+#SPA{
+    padding-top: 11vh;
+    height: 189vh;
+    background-color: rgba(166, 0, 255, 0.566);
+}
+#Activites{
+    padding-top: 11vh;
+    height: 189vh;
+    background-color: rgba(255, 0, 247, 0.566);
+}
+#Contact{
+    padding-top: 11vh;
+    height: 189vh;
+    background-color: rgba(255, 0, 0, 0.566);
+}
