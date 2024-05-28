@@ -10,7 +10,6 @@ nav{
 .navbar {
     position: fixed;
     width: 100%;
-    height: 11vh;
 }
 .schema img{
     height: 55px;
@@ -41,46 +40,108 @@ nav{
     gap: 2vw;
 }
 
-section img{
+/*section img{
     height: 70vh;
     width: 50vw;
     object-fit: cover;
+}*/
+section{
+    padding-top: 11vh;
+}
+@media screen and (max-width: 850px) {
+    section{
+        padding-top: 6vh;
+    }
+}
+@media screen and (max-width: 450px) {
+    section{
+        padding-top: 7vh;
+    }
 }
 
 #Accueil{
-    padding-top: 11vh;
     height: 189vh;
     background-color: rgba(255, 255, 0, 0.542);
 }
+.accueil01{
+    display: flex;
+    flex-direction: row;
+}
+.accueil1{
+    background-color: aqua;
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.accueil1-1{
+    border-radius: 7%;
+    overflow: hidden;
+    margin-left: 2%;
+    height: 35vh;
+    width: 30vw;
+    background-color: beige;
+}
+.accueil1-2{
+    border-radius: 7%;
+    overflow: hidden;
+    margin-left: 18%;
+    height: 35vh;
+    width: 30vw;
+    background-color: rgb(188, 188, 117);
+}
+.contain-accueil1, .contain-accueil2{
+    width: 120vw;
+    background-color: rgb(82, 29, 131);
+    display: flex;
+    flex-direction: row;
+    animation: accueil01 12s infinite alternate-reverse;
+}
+@keyframes accueil01 {
+    0%{ transform: translateX(-90vw);}
+    25%{ transform: translateX(-60vw);}
+    50%{ transform: translateX(-30vw);}
+    75%{ transform: translateX(-0vw);}
+    100%{ transform: translateX(vw);}
+}
+.accueil1 img{
+    width: 30vw;
+    height: 40vh;
+    object-fit: cover;
+}
+.accueil2{
+    background-color: rgb(53, 146, 146);
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 #Station{
-    padding-top: 11vh;
     height: 189vh;
     background-color: rgba(4, 255, 0, 0.45);
 }
 
 #Pieces{
-    padding-top: 11vh;
     height: 189vh;
     background-color: rgba(0, 234, 255, 0.566);
 }
 #Repas{
-    padding-top: 11vh;
     height: 189vh;
     background-color: rgba(0, 68, 255, 0.566);
 }
 #SPA{
-    padding-top: 11vh;
+
     height: 189vh;
     background-color: rgba(166, 0, 255, 0.566);
 }
 #Activites{
-    padding-top: 11vh;
     height: 189vh;
     background-color: rgba(255, 0, 247, 0.566);
 }
 #Contact{
-    padding-top: 11vh;
     height: 189vh;
     background-color: rgba(255, 0, 0, 0.566);
 }
