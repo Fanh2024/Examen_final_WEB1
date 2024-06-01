@@ -446,9 +446,114 @@ section{
 
 
 #Pieces{
-    height: 189vh;
-    background-color: rgba(212, 255, 0, 0.566);
+    height: 100vh;
+    background-color: rgb(211, 227, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.contain-pieces{
+    background-color: rg(0, 255, 255, 0.421);
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contain-pieces h1{
+    color: rgb(0, 52, 119);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    transition: transform 0.5s ease;
+}
+.contain-pieces h1:hover{
+    transform: scale(1.07);
+    color: rgb(43, 5, 5);
+}
+.contain-pieces p{
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 850px){
+    .contain-pieces p{
+        font-size: 10px;
+    }
+}
+.image-pieces{
+    background-color: rg(165, 42, 42, 0.476);
+    display: flex;
+    flex-direction: row;
+    width: 115%;
+    justify-content: space-between;
+    align-items: center;
+}
+.image-pieces img{
+    height: 15vh;
+    width: 30%;
+    object-fit: cover;
+    box-shadow: 0px 1px 3px 0px;
+    transition: transform 0.5s ease;
+}
+.image-pieces img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 1px 4px 0px;
+}
+.image1-pieces{
+    background-color: rg(0, 128, 0, 0.556);
+    height: 15vh;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.image2-pieces{
+    background-color: rg(115, 128, 0, 0.556);
+    height: 15vh;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#Pieces button{
+    background-color: rgb(196, 222, 206);
+    border: 1px;
+    box-shadow: 0px 1px 2px 0px;
+    border-radius: 14px;
+    height: 5.5vh;
+    width: 75px;
+    transition: transform 0.5s ease;
+    align-items: center;
+}
+@media screen and (max-width: 850px) {
+    #Pieces button{
+        height: 4.5vh;
+    }
+}
+.visiter{
+    color: rgb(47, 61, 152);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#Pieces button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 1px 3px 0px;
+    border-radius: 13px;
+    .visiter{
+        color: rgb(58, 45, 11);
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 13px;
+    }
+}
+.visiter:hover{
+    color: rgb(73, 110, 205) !important;
+    font-size: 14px !important;
+}
+
+
+
 #Repas{
     height: 189vh;
     background-color: rgba(0, 68, 255, 0.566);
