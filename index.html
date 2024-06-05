@@ -11,72 +11,101 @@
 
   <body>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <div class="logo">
-          <div class="schema">
-            <img src="assets/photo/EXTERIEUR_01.JPG" alt="" />
-          </div>
-          <div class="titre">
-            <h1>Lotus Bungalow</h1>
-          </div>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Accueil"
-                >Accueil</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Station">Station</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Pieces">Pieces</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Repas">Repas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Activites">Activites</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact</a>
-            </li>
-          </ul>
+        <div class="container-fluid">
+            <div class="logo">
+                <div class="schema">
+                    <img src="assets/photo/logo final ok.png" alt="">
+                </div>
+                <div class="titre">
+                    <h1>Lotus Bungalow</h1>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Station">Station</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Pieces">Pieces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Repas">Repas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Activites">Activites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
       </div>
     </nav>
     <section id="Accueil">
-      <div class="accueil01">
-        <div class="accueil2">
-          <div class="contain-accueil-text">
-            <h1>Welcome to <span>Lotus Bungalow</span> site</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad
-              excepturi molestias temporibus id, at illo laudantium aspernatur
-              architecto officia consequuntur voluptatem laborum perferendis
-              soluta, consectetur voluptate cum? Excepturi, voluptatum!
-            </p>
-          </div>
-        </div>
-        <div class="accueil1">
-          <div class="accueil1-1">
-            <div class="contain-accueil1">
-              <img src="assets/photo/autre1.jpg" alt="" />
-              <img src="assets/photo/autre2.jpg" alt="" />
-              <img src="assets/photo/autre3.jpg" alt="" />
-              <img src="assets/photo/autre6.jpg" alt="" />
+        <div class="accueil01">
+            <div class="accueil2">
+                <div class="contain-accueil-text">
+                    <h1>Welcome to
+                        <span>Lotus Bungalow</span> site
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad excepturi molestias temporibus
+                        id, at illo laudantium aspernatur architecto officia consequuntur voluptatem laborum perferendis
+                        soluta, consectetur voluptate cum? Excepturi, voluptatum!
+                    </p>
+                    <button type="button" class="btne btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@getbootstrap">Reserver des maintenant</button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Reservation</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Votre nom</label>
+                                            <input type="text" class="form-control" id="client-name">
+                                        </div>
+
+                                        <div class="mb-3 flex-row">
+                                            <label for="recipient-name" class="col-form-label">Date d'arriver</label>
+                                            <input type="date" class="form-control" id="checkIn">
+                                            <label for="recipient-name" class="col-form-label">Date depart</label>
+                                            <input type="date" class="form-control" id="checkOut">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Email:</label>
+                                            <input type="phone" class="form-control" id="client-phone">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Annuler</button>
+                                    <button type="button" class="btn btn-primary">Confirmer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
           <div class="accueil1-2">
@@ -136,23 +165,56 @@
       </div>
     </section>
     <section id="Station">
-      <div class="text-station">
-        <h1>STATION</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis,
-          incidunt. Eius quod fuga doloribus veniam iusto, aspernatur, fugiat
-          eaque dolorum quo obcaecati soluta minus tempora non explicabo eum
-          similique ipsa.
-        </p>
-      </div>
-      <div class="image-station">
-        <img src="assets/photo/EXTERIEUR_01.JPG" alt="" />
-      </div>
+        <div class="text-station">
+            <h1>STATION</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, incidunt. Eius quod fuga doloribus
+                veniam iusto, aspernatur, fugiat eaque dolorum quo obcaecati soluta minus tempora non explicabo eum
+                similique ipsa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam eaque sapiente, impedit
+                ipsa reprehenderit, ullam placeat maiores sequi animi culpa ex? Earum debitis accusantium eius, magnam
+                enim eligendi voluptatibus at?
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti temporibus magnam doloremque sapiente,
+                nihil doloribus accusamus natus est ab voluptatem excepturi nam labore earum molestiae maxime voluptate,
+                repudiandae modi cumque.</p>
+            <div class="lien">
+                <span>Lien du lieu: </span><a href="https://maps.app.goo.gl/VCkZGp74DrAyw5Dy8">google maps</a>
+            </div>
+        </div>
+        <div class="image-station">
+            <img src="assets/photo/EXTERIEUR_01.JPG" alt="">
+        </div>
     </section>
-    <section id="Pieces"></section>
-    <section id="Repas"></section>
-    <section id="SPA"></section>
-    <section id="Activites"></section>
+    <section id="Pieces">
+        <div class="contain-pieces">
+            <h1>PIECES</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto atque ipsum sit esse! Accusantium,
+                placeat quo! Saepe asperiores aperiam, quas facere, debitis vitae doloribus magni iste dolorem totam
+                similique natus!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequatur esse atque
+                maxime unde ratione ipsa quasi amet quos eos delectus suscipit at veniam, omnis inventore officiis
+                officia fugiat. Ex!
+            </p>
+            <p>sdfghjk shjkl ruioirewertyuio yuidfjk:</p>
+            <div class="image-pieces">
+                <div class="image1-pieces">
+                    <img src="assets/photo/BUNGALOW_01_4.JPG" alt="">
+                    <img src="assets/photo/BUNGALOW_02_1.JPG" alt="">
+                    <img src="assets/photo/BUNGALOW_03_1.JPG" alt="">
+                </div>
+                <div class="image2-pieces">
+                    <img src="assets/photo/BUNGALOW_05_4.JPG" alt="">
+                    <img src="assets/photo/BUNGALOW_08_1.JPG" alt="">
+                    <img src="assets/photo/BUNGALOW_10_3.JPG" alt="">
+                </div>
+            </div>
+            <button><a href="pieces.html" class="visiter">Visiter</a></button>
+        </div>
+
+    </section>
+    <section id="Repas">
+    </section>
+    <section id="SPA">
+    </section>
+    <section id="Activites">
     <section id="Contact"></section>
   </body>
 </html>

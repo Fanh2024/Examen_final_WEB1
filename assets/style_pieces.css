@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 11vh;
+    width: 100vw;
+    background-color: rgb(86, 109, 87);
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.commencement{
+    background-color: aq;
+    height: 35vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.petite-image{
+    background-color: re;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 2vw;
+}
+.petite-image img{
+    height: 100%;
+    width: 20%;
+    box-shadow: 0 0.5px 3px 0;
+}
+.petite-image p{
+    width: 70%;
+}
+@media screen and (max-width: 850px) {
+    .commencement{
+        height: 25vh;
+    }
+}
+@media screen and (max-width: 750px) {
+    .petite-image img{
+        height: 85%;
+        width: 35%;
+    }
+}
+
+h5{
+    font-weight: bold;
+    color: rgb(223, 29, 29);
+}
+h6{
+    font-weight: bold;
+    color: rgb(0, 85, 255);
+}
+.btnei{
+    background-color: rgb(63, 95, 158);
+    color: rgb(215, 215, 215);
+    border-radius: 11px;
+    border: 0.5px;
+    height: 35px;
+    width: 90px;
+    transition: transform 0.5s ease;
+}
+.btnei:hover{
+    transform: scale(1.05);
+}
+
+.schema img{
+    height: 55px;
+    width: 60px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+.logo{
+    background-color: aqu;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5vw;
+    margin-left: 4vw;
+}
+.logo h1{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(245, 245, 209);
+}
+.bouton{
+    background-color: yello;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+main button{
+    background-color: rgb(196, 222, 206);
+    border: 1px;
+    box-shadow: 0px 0.5px 3px 0px;
+    border-radius: 12px;
+    height: 5.5vh;
+    width: 75px;
+    transition: transform 0.5s ease;
+    align-items: center;
+}
+@media screen and (max-width: 850px) {
+    main button{
+        height: 4.5vh;
+        width: 60px;
+        border-radius: 12px;
+    }
+}
+.retour{
+    color: rgb(47, 61, 152);
+    text-decoration: none;
+    font-size: 11.5px;
+    font-weight: bold;
+}
+
+main button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0.5px 4px 0px;
+    border-radius: 13px;
+    .retour{
+        color: rgb(58, 45, 11);
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 13px;
+    }
+}
+.retour:hover{
+    color: rgb(73, 110, 205)!important;
+    font-size: 14px !important;
+}
+.bungalow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 11vh;
+}
+section{
+    background-color: rg(137, 43, 226, 0.37);
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.text{
+    background-color: rg(255, 255, 0, 0.509);
+    width: 45vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bungalow h1{
+    color: rgb(0, 52, 119);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-decoration: underline;
+    transition: transform 0.5s ease;
+}
+.bungalow h1:hover{
+    transform: scale(1.07);
+    color: rgb(43, 5, 5);
+}
+.bungalow p{
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 750px){
+    .bungalow p{
+        font-size: 10px;
+    }
+}
+.image{
+    background-color: rg(0, 255, 4, 0.509);
+    width: 45%;
+    height: 41.3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.image1{
+    background-color: rg(0, 106, 255, 0.378);
+    height: 20vh;
+    width: 40.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.image img{
+    height: 100%;
+    width: 31.1%;
+    box-shadow: 0 0.5px 4px 0;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.image img:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0.5px 5px 0;
+}
+@media screen and (max-width: 850px) {
+    section{
+        flex-direction: column;
+        height: 60vh;
+    }
+    .text{
+        width: 85vw;
+        height: 20vh;
+    }
+    .image{
+        width: 85vw;
+        height: 21vh;
+    }
+    .image1{
+        height: 10vh;
+        width: 85vw;
+    }
+}
