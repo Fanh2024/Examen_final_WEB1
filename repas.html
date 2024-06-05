@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repas</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <section class="repas">
+      <div class="title">
+        <h1>Repas à Notre Hôtel</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#restaurant" class="element" data-tab="restaurant"
+              >Restaurant</a
+            >
+          </li>
+          <li>
+            <a href="#pizzeria" class="element" data-tab="pizzeria">Pizzeria</a>
+          </li>
+        </ul>
+      </nav>
+      <section id="content">
+        <div id="restaurant" class="nav-content">
+          <div class="card">
+            <div class="imageContent">
+              <img src="assets/photo/autre1.jpg" alt="..." />
+              <img src="assets/photo/autre2.jpg" alt="..." />
+              <img src="assets/photo/autre3.jpg" alt="..." />
+              <img src="assets/photo/autre4.jpg" alt="..." />
+              <img src="assets/photo/autre4.jpg" alt="..." />
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Bienvenue au restaurant de notre hôtel. Nous offrons une variété
+                de plats raffinés.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="pizzeria" class="nav-content">
+          <h2>Pizzeria</h2>
+          <div class="card mb-3">
+            <img src="assets/photo/pizza.jfif" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Pizzeria</h5>
+              <p>
+                Découvrez nos délicieuses pizzas préparées avec des ingrédients
+                frais du village.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Last updated 3 mins ago</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
