@@ -14,6 +14,63 @@ main{
     align-items: center;
     justify-content: space-between;
 }
+.commencement{
+    background-color: aq;
+    height: 35vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.petite-image{
+    background-color: re;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 2vw;
+}
+.petite-image img{
+    height: 100%;
+    width: 20%;
+    box-shadow: 0 0.5px 3px 0;
+}
+.petite-image p{
+    width: 70%;
+}
+@media screen and (max-width: 850px) {
+    .commencement{
+        height: 25vh;
+    }
+}
+@media screen and (max-width: 750px) {
+    .petite-image img{
+        height: 85%;
+        width: 35%;
+    }
+}
+
+h5{
+    font-weight: bold;
+    color: rgb(223, 29, 29);
+}
+h6{
+    font-weight: bold;
+    color: rgb(0, 85, 255);
+}
+.btnei{
+    background-color: rgb(63, 95, 158);
+    color: rgb(215, 215, 215);
+    border-radius: 11px;
+    border: 0.5px;
+    height: 35px;
+    width: 90px;
+    transition: transform 0.5s ease;
+}
+.btnei:hover{
+    transform: scale(1.05);
+}
 
 .schema img{
     height: 55px;
@@ -46,7 +103,7 @@ main button{
     background-color: rgb(196, 222, 206);
     border: 1px;
     box-shadow: 0px 0.5px 3px 0px;
-    border-radius: 14px;
+    border-radius: 12px;
     height: 5.5vh;
     width: 75px;
     transition: transform 0.5s ease;
@@ -55,12 +112,14 @@ main button{
 @media screen and (max-width: 850px) {
     main button{
         height: 4.5vh;
+        width: 60px;
+        border-radius: 12px;
     }
 }
 .retour{
     color: rgb(47, 61, 152);
     text-decoration: none;
-    font-size: 13px;
+    font-size: 11.5px;
     font-weight: bold;
 }
 
@@ -118,7 +177,7 @@ section{
     font-size: 13px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-@media screen and (max-width: 850px){
+@media screen and (max-width: 750px){
     .bungalow p{
         font-size: 10px;
     }

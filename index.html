@@ -15,7 +15,7 @@
         <div class="container-fluid">
             <div class="logo">
                 <div class="schema">
-                    <img src="assets/photo/EXTERIEUR_01.JPG" alt="">
+                    <img src="assets/photo/logo final ok.png" alt="">
                 </div>
                 <div class="titre">
                     <h1>Lotus Bungalow</h1>
@@ -58,7 +58,53 @@
                     </h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad excepturi molestias temporibus
                         id, at illo laudantium aspernatur architecto officia consequuntur voluptatem laborum perferendis
-                        soluta, consectetur voluptate cum? Excepturi, voluptatum!</p>
+                        soluta, consectetur voluptate cum? Excepturi, voluptatum!
+                    </p>
+                    <button type="button" class="btne btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@getbootstrap">Reserver des maintenant</button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Reservation</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Votre nom</label>
+                                            <input type="text" class="form-control" id="client-name">
+                                        </div>
+
+                                        <div class="mb-3 flex-row">
+                                            <label for="recipient-name" class="col-form-label">Date d'arriver</label>
+                                            <input type="date" class="form-control" id="checkIn">
+                                            <label for="recipient-name" class="col-form-label">Date depart</label>
+                                            <input type="date" class="form-control" id="checkOut">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Email:</label>
+                                            <input type="phone" class="form-control" id="client-phone">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Annuler</button>
+                                    <button type="button" class="btn btn-primary">Confirmer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="accueil1">
@@ -82,6 +128,7 @@
         </div>
         <div class="accueil02">
             <div class="text-accueil02">
+                <h1>Lotus Bungalow</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente incidunt dolorum labore dolore
                     fugiat sed minus possimus, voluptatem laborum libero magni corporis? Cupiditate voluptatum
                     praesentium ipsam dolorem, repudiandae impedit alias.</p>
@@ -130,7 +177,16 @@
             <h1>STATION</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, incidunt. Eius quod fuga doloribus
                 veniam iusto, aspernatur, fugiat eaque dolorum quo obcaecati soluta minus tempora non explicabo eum
-                similique ipsa.</p>
+                similique ipsa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam eaque sapiente, impedit
+                ipsa reprehenderit, ullam placeat maiores sequi animi culpa ex? Earum debitis accusantium eius, magnam
+                enim eligendi voluptatibus at?
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti temporibus magnam doloremque sapiente,
+                nihil doloribus accusamus natus est ab voluptatem excepturi nam labore earum molestiae maxime voluptate,
+                repudiandae modi cumque.</p>
+            <div class="lien">
+                <span>Lien du lieu: </span><a href="https://maps.app.goo.gl/VCkZGp74DrAyw5Dy8">google maps</a>
+            </div>
         </div>
         <div class="image-station">
             <img src="assets/photo/EXTERIEUR_01.JPG" alt="">
