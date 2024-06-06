@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <script src="assets/js/bootstrap.min.js" defer></script>
     <link rel="stylesheet" href="assets/style.css">
+    <script src="scripts.js" defer></script>
     <title>Lotus Bungalow</title>
 </head>
 
@@ -28,22 +29,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#Accueil">Accueil</a>
+                        <a class="nave-link" aria-current="page" href="#Accueil">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Station">Station</a>
+                        <a class="nave-link" href="#Station">Station</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Pieces">Pieces</a>
+                        <a class="nave-link" href="#Chambres">Chambres</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Repas">Repas</a>
+                        <a class="nave-link" href="#Repas">Repas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Activites">Activites</a>
+                        <a class="nave-link" href="#Activites">Activites</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
+                        <a class="nave-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -192,9 +193,9 @@
             <img src="assets/photo/EXTERIEUR_01.JPG" alt="">
         </div>
     </section>
-    <section id="Pieces">
+    <section id="Chambres">
         <div class="contain-pieces">
-            <h1>PIECES</h1>
+            <h1>Chambres</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto atque ipsum sit esse! Accusantium,
                 placeat quo! Saepe asperiores aperiam, quas facere, debitis vitae doloribus magni iste dolorem totam
                 similique natus!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequatur esse atque
@@ -220,14 +221,109 @@
     </section>
     <section id="Repas">
 
-    </section>
-    <section id="SPA">
+        <div class="title">
+            <h1>Repas</h1>
+        </div>
+        <div class="navig">
+            <ul>
+                <li>
+                    <a href="#restaurant" class="element" data-tab="restaurant">Restaurant</a>
+                </li>
+                <li>
+                    <a href="#pizzeria" class="element" data-tab="pizzeria">Pizzeria</a>
+                </li>
+            </ul>
+        </div>
+        <section id="content">
+            <div id="restaurant" class="nav-content">
+                <div class="card">
+                    <div class="imageContent">
+                        <img src="assets/photo/plats/PLATS_24.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_25.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_02.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_03.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_04.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_08.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_09.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_10.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_11.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_12.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_13.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_15.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_19.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_20.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_22.JPG" alt="..." />
+                        <img src="assets/photo/plats/PLATS_31.JPG" alt="..." />
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Bienvenue au restaurant de notre hôtel. Nous offrons une variété
+                            de plats raffinés dont le petit dejeuner, dejeuner, diner et des gouter. Nos tarif des plats
+                            varient de 8.000 Ariary a 27.000 Ar. Voici quelque apercu de nos plats mais nous vous
+                            invitons de rejoindre les lieux pour plus d'informations ou contactez nous en nous envoyons
+                            un message ou appeler notre numero de telephone. <a href="#Contact">CONTACT</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="pizzeria" class="nav-content contforme">
+                <h2>Pizzeria</h2>
+                <div class="card mb-3 forme">
+                    <img src="assets/photo/plats/PLATS_26.JPG" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Pizzeria</h5>
+                        <p>
+                            Découvrez nos délicieuses pizzas préparées avec des ingrédients
+                            frais du village.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
+        </section>
     </section>
+
     <section id="Activites">
 
     </section>
     <section id="Contact">
+        <h1>Contact</h1>
+        <div class="container">
+            <form id="contactForm">
+                <h2>Composez un message</h2>
+                <div class="form-group">
+                    <label for="name">Votre nom :</label>
+                    <input type="text" id="name" name="name" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numéro de téléphone :</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse mail :</label>
+                    <input type="email" id="email" name="email" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label for="objet">Objet du message :</label>
+                    <input type="text" id="objet" name="objet" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-success">Envoyer</button>
+            </form>
+            <div id="confirmation">Message envoyé avec succès !</div>
+        </div>
+        <div class="contact-info">
+            <h1>Autre:</h1>
+            <p>Tél : +261 .. .. ... ..</p>
+            <p>Mail : lelotus.bungalow@gmail.com</p>
+            <span>Lien FB : </span><a href="https://www.facebook.com/lelotusfoulpointe/">Facebook</a>
+        </div>
 
     </section>
 </body>

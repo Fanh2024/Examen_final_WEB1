@@ -15,6 +15,8 @@ main{
     justify-content: space-between;
 }
 .commencement{
+    padding-top: 4vh;
+    margin-bottom: 4vh;
     background-color: aq;
     height: 35vh;
     width: 90vw;
@@ -24,6 +26,7 @@ main{
     justify-content: space-evenly;
 }
 .petite-image{
+    padding-top: 3vh;
     background-color: re;
     display: flex;
     flex-direction: row;
@@ -32,9 +35,15 @@ main{
     gap: 2vw;
 }
 .petite-image img{
+    object-fit: cover;
     height: 100%;
     width: 20%;
     box-shadow: 0 0.5px 3px 0;
+    transition: transform 0.5s ease;
+}
+.petite-image img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 1px 6px 0;
 }
 .petite-image p{
     width: 70%;
@@ -50,6 +59,32 @@ main{
         width: 35%;
     }
 }
+h2{
+    font-weight: bold;
+    font-size: large;
+    color: rgb(95, 125, 192);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 750px) {
+    h3{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    h3{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 500px) {
+    h3{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 450px) {
+    h3{
+        font-size: 12px;
+    }
+}
 
 h5{
     font-weight: bold;
@@ -61,15 +96,19 @@ h6{
 }
 .btnei{
     background-color: rgb(63, 95, 158);
-    color: rgb(215, 215, 215);
+    color: rgb(255, 255, 255);
     border-radius: 11px;
+    box-shadow: 0 0.8px 4px 0;
     border: 0.5px;
     height: 35px;
     width: 90px;
     transition: transform 0.5s ease;
 }
 .btnei:hover{
-    transform: scale(1.05);
+    font-weight: bold;
+    background-color: rgb(181, 134, 176);
+    color: rgb(255, 255, 255);
+    transform: scale(1.07);
 }
 
 .schema img{
@@ -124,18 +163,19 @@ main button{
 }
 
 main button:hover{
+    background-color: rgb(226, 255, 238);
     transform: scale(1.1);
     box-shadow: 0px 0.5px 4px 0px;
     border-radius: 13px;
     .retour{
-        color: rgb(58, 45, 11);
-        text-decoration: underline;
+        color: rgb(0, 153, 255);
         font-weight: bold;
         font-size: 13px;
     }
 }
 .retour:hover{
-    color: rgb(73, 110, 205)!important;
+    color: rgb(194, 0, 194)!important;
+    text-decoration: underline;
     font-size: 14px !important;
 }
 .bungalow{
@@ -162,6 +202,9 @@ section{
     justify-content: space-evenly;
     align-items: center;
 }
+.petite-image a:hover{
+    color: rgb(246, 0, 246);
+}
 .bungalow h1{
     color: rgb(0, 52, 119);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -171,7 +214,7 @@ section{
 }
 .bungalow h1:hover{
     transform: scale(1.07);
-    color: rgb(43, 5, 5);
+    color: rgb(200, 0, 187);
 }
 .bungalow p{
     font-size: 13px;
@@ -208,7 +251,7 @@ section{
 }
 .image img:hover{
     transform: scale(1.15);
-    box-shadow: 0 0.5px 5px 0;
+    box-shadow: 0 1.5px 5px 0;
 }
 @media screen and (max-width: 850px) {
     section{
