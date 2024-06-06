@@ -158,3 +158,32 @@ button:hover {
   margin-bottom: 10px;
   color: #333;
 }
+
+/* //activité */
+
+body {
+  font-family: "Arial", sans-serif;
+}
+#activities {
+  background-color: cadetblue;
+}
+#activities .card {
+  border: none;
+  border-radius: 15px;
+  /* overflow: hidden; */
+  transition: transform 0.2s;
+}
+#activities .card:hover {
+  transform: scale(1.05);
+}
+#activities .card-title {
+  color: rgb(23, 23, 146);
+}
+#activities .card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.card-height {
+  max-height: 601vh;
+}
