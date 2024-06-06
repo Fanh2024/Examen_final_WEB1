@@ -186,4 +186,16 @@ body {
 }
 .card-height {
   max-height: 601vh;
+  /* max-width: 90vw;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5vw; */
+}
+@media (max-width: 1000px) {
+  .card-height {
+    max-width: 85vw;
+    align-items: center;
+    justify-content: center;
+    margin: 3.75vw;
+  }
 }
