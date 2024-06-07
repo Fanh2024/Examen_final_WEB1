@@ -433,6 +433,12 @@ section{
         height: 10vh;
     }
 }
+@media screen and (max-width: 370px){
+    .contain-accueil-text h1, .contain-accueil-text span{
+        font-size: 25px;
+    }
+    
+}
 
 
 #Station{
@@ -816,23 +822,28 @@ section{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    color: white;
+    background-color: #84b17d;
+    border-radius: 13px;
+    color: rgb(0, 0, 0);
     display: block;
     width: 100%;
     max-width: 200px;
     margin: 0 auto;
   }
   #Contact button:hover {
-    background-color: #218838;
+    background-color: #2a6e39;
+    color: white;
   }
   #confirmation {
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 15px 20px;
-    background-color: #218838;
-    color: white;
-    border-radius: 4px;
+    border-right: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
     display: none;
   }
   .contact-info {
@@ -877,7 +888,7 @@ section{
 #Activites{
     height: auto;
     padding-top: 5vh;
-    background-color: rgb(170, 198, 176);
+    background-color: rgb(218, 230, 220);
 }
   #Activites .card {
     border: none;
