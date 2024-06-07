@@ -61,7 +61,7 @@
                         vous accueillir dans notre havre de paix, où chaque détail est
                         pensé pour votre bien-être et votre satisfaction.
                     </p>
-                    <button type="button" class="btne btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    <button type="button" class="btne" data-bs-toggle="modal" data-bs-target="#exampleModal"
                         data-bs-whatever="@getbootstrap">
                         Reserver des maintenant
                     </button>
@@ -81,24 +81,41 @@
                                     <form>
                                         <div class="mb-3">
                                             <label for="client-name" class="col-form-label">Votre nom</label>
-                                            <input type="text" class="form-control" id="client-name" />
+                                            <input type="text" class="form-control" id="client-name" required />
                                         </div>
 
                                         <div class="mb-3 flex-row">
                                             <label for="checkIn" class="col-form-label">Date d'arriver</label>
-                                            <input type="date" class="form-control" id="checkIn" />
+                                            <input type="date" class="form-control" id="checkIn" required />
                                             <label for="checkOut" class="col-form-label">Date depart</label>
-                                            <input type="date" class="form-control" id="checkOut" />
+                                            <input type="date" class="form-control" id="checkOut" required />
                                         </div>
 
                                         <div class="mb-3">
-                                            <label for="client-phone" class="col-form-label">Email:</label>
-                                            <input type="tel" class="form-control" id="client-phone" />
+                                            <label for="client-phone" class="col-form-label">Tél:</label>
+                                            <input type="tel" class="form-control" id="client-phone" required />
                                         </div>
 
                                         <div class="mb-3">
                                             <label for="message-text" class="col-form-label">Message:</label>
-                                            <textarea class="form-control" id="message-text"></textarea>
+                                            <textarea class="form-control" id="message-text" required></textarea>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="room-choice" class="col-form-label">Choix de chambre:</label>
+                                            <select class="form-control" id="room-choice" required>
+                                                <option value="">Sélectionnez une chambre</option>
+                                                <option value="Bungalow 1">Bungalow 1</option>
+                                                <option value="Bungalow 2">Bungalow 2</option>
+                                                <option value="Bungalow 3">Bungalow 3</option>
+                                                <option value="Bungalow 4">Bungalow 4</option>
+                                                <option value="Bungalow 5">Bungalow 5</option>
+                                                <option value="Bungalow 6">Bungalow 6</option>
+                                                <option value="Bungalow 7">Bungalow 7</option>
+                                                <option value="Bungalow 8">Bungalow 8</option>
+                                                <option value="Bungalow 9">Bungalow 9</option>
+                                                <option value="Bungalow 10">Bungalow 10</option>
+                                            </select>
                                         </div>
                                     </form>
                                 </div>
@@ -106,13 +123,15 @@
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                                         Annuler
                                     </button>
-                                    <button type="button" class="btn btn-primary">
+                                    <button type="button" class="btn btn-primary" id="confirmBtn"
+                                        onclick="confirmReservation()">
                                         Confirmer
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div class="accueil1">

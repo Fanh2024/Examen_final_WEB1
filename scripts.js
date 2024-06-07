@@ -45,3 +45,12 @@ document
       alert("Veuillez remplir tous les champs.");
     }
   });
+
+// RESERVATION JS
+
+function confirmReservation() {
+  const confirmReservation = confirm("Voulez-vous vraiment réserver ?");
+  if (confirmReservation) {
+    alert("Réservation confirmée !");
+  }
+}
