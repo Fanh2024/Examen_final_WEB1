@@ -36,11 +36,11 @@ nav {
   max-width: 55vw;
   justify-content: space-evenly;
 }
-.nave-link {
+.liennav {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.nave-link:hover {
+.liennav:hover {
   color: rgb(247, 28, 255);
 }
 .collapse li {
@@ -942,11 +942,9 @@ textarea {
   }
 }
 
-.card-height:hover{
-    h5 {
-        color: rgb(255, 7, 255) !important;
-        font-weight: bold;
-    }
+.card-height:hover h5{
+  color: rgb(255, 7, 255) !important;
+  font-weight: bold;
 }
 
   footer {
