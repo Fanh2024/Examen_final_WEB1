@@ -256,15 +256,16 @@ section{
 @media screen and (max-width: 850px) {
     section{
         flex-direction: column;
-        height: 60vh;
+        height: 63vh;
     }
     .text{
         width: 85vw;
         height: 20vh;
     }
     .image{
+        padding-top: 1.5vh;
         width: 85vw;
-        height: 21vh;
+        height: 22.5vh;
     }
     .image1{
         height: 10vh;
